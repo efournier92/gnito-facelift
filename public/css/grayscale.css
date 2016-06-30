@@ -389,3 +389,7 @@ body {
     display: inline-block;
 }
 
+.slide {
+  width: 100%;
+  margin: 0;
+}
