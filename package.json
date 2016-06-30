@@ -4,7 +4,7 @@
   "description": "Proposed reimagining of Gnito landing page",
   "main": "server.js",
   "scripts": {
-    "start": "nodemon server.js"
+    "start": "node server.js"
   },
   "dependencies": {
     "express": "^4.13.3"
@@ -16,5 +16,5 @@
     "type": "git",
     "url": "https://github.com/efournier92/gnito-facelift"
   },
-  "author": "Eric Fournier",
+  "author": "Eric Fournier"
 }
