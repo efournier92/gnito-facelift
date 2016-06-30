@@ -60,11 +60,12 @@ a:focus {
     border-bottom: 1px solid rgba(255,255,255,.3);
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    background-color: #000;
+    background-color: transparent;
 }
 
 .navbar-brand {
     font-weight: 700;
+    margin-top: -10px;
 }
 
 .navbar-brand:focus {
@@ -99,6 +100,12 @@ a:focus {
     outline: 0;
 }
 
+.fa-bars {
+  color: #f37025;
+  margin-top: -2px;
+  font-size: 36px;
+}
+
 @media(min-width:767px) {
     .navbar {
         padding: 20px 0;
@@ -127,7 +134,7 @@ a:focus {
     padding: 100px 0;
     text-align: center;
     color: #fff;
-    background: url(../img/background.png) no-repeat bottom center scroll;
+    background: url(../img/bg-light.png) no-repeat bottom center scroll;
     background-color: #000;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -347,3 +354,38 @@ img::-moz-selection {
 body {
     webkit-tap-highlight-color: rgba(255,255,255,.2);
 }
+
+/* .centered { */
+/*   display: table-cell; */
+/*   text-align: center; */
+/*   vertical-align: middle; */
+/* } */
+
+.landing-image {
+  display: flex;
+  max-width: 500px;
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 16px;
+}
+
+.centered {
+  text-align: center;
+}
+
+.bold {
+  color: black;
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+
+.form-inline .form-control {
+    width:auto;
+}
+
+.form-inline .form-group {
+    display: inline-block;
+}
+

@@ -734,6 +734,7 @@
 }
 .fa-bars:before {
   content: "\f0c9";
+  color: black;
 }
 .fa-list-ul:before {
   content: "\f0ca";
