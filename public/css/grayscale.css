@@ -400,10 +400,10 @@ body {
 
 }
 
-.light-bg {
+.bg-light {
   background: url(../img/bg-light.png);
 }
 
-.dark-bg {
+.bg-dark {
   background: url(../img/bg-dark.png);
 }
