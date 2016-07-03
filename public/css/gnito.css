@@ -1,20 +1,24 @@
 @font-face {
-  font-family: 'HelveticaNeue-Light';
-  src: url('../fonts/HelveticaNeue-Light.eot');
-  src: url('../fonts/HelveticaNeue-Light.eot?#iefix') format('embedded-opentype'),
-  url('../fonts/HelveticaNeue-Light.woff') format('woff'),
-  url('../fonts/HelveticaNeue-Light.ttf') format('truetype'),
-  url('../fonts/HelveticaNeue-Light.svg#open_sansregular') format('svg');
-  font-weight: normal;
-  font-style: normal;
+  font-family: 'HNeue-Thin';
+  src: url('../fonts/HelveticaNeueLTCom-Th.ttf');
+}
+
+@font-face {
+  font-family: 'HNeue-Light';
+  src: url('../fonts/HelveticaNeueLTCom-Lt.ttf');
+}
+
+@font-face {
+  font-family: 'HNeue-Med';
+  src: url('../fonts/HelveticaNeueLTCom-Md.ttf');
 }
 
 body {
   width: 100%;
   height: 100%;
-  font-family: "HelveticaNeue-Light";
-  color: #fff;
-  background-color: #000;
+  font-family: "HNeue-Med", Arial, sans-serif;
+  color: green;
+  background-color: black;
 }
 
 html {
@@ -22,22 +26,27 @@ html {
   height: 100%;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin: 0 0 35px;
-  font-family: "HelveticaNeue-Light";
-  font-weight: 700;
-  letter-spacing: 1px;
+h1 {
+  margin: 5% 5% 35px;
+  font-family: "HNeue-Thin", Arial, sans-serif;
+  text-align: center;
+  font-size: 2.5em;
+  color: #ffffff;
+  margin-bottom: 5px;
+}
+
+h2 {
+  margin: 5% 5% 35px;
+  font-family: "HNeue-Thin", Arial, sans-serif;
+  text-align: center;
+  color: #949494;
+  margin-bottom: 3px;
 }
 
 p {
-  margin: 0 0 25px;
-  font-size: 18px;
+  margin: 5% 5% 35px;
   line-height: 1.5;
+  text-align: center;
 }
 
 @media(min-width:767px) {
@@ -362,26 +371,6 @@ body {
   webkit-tap-highlight-color: rgba(255,255,255,.2);
 }
 
-.landing-image {
-  display: flex;
-  max-width: 420px;
-  width: 80%;
-  margin-right: auto;
-  margin-left: auto;
-  margin-bottom: 16px;
-}
-
-.centered {
-  text-align: center;
-}
-
-.bold {
-  color: black;
-  font-size: 30px;
-  font-weight: bold;
-  margin-bottom: 16px;
-}
-
 .form-inline .form-control {
   width:auto;
 }
@@ -394,20 +383,26 @@ body {
   width: 100%;
   margin: 0;
 }
+@media screen and (max-width: 750px){
+      h1 { color: green; }
+    }
 
-.iPhone {
-  height: 60%;
-  max-width: 300px;
+.content-center {
+  margin: 0 auto;
 }
 
-.dark-bg {
-
+.flex-column {
+  display: flex;
+  flex-direction: column;
 }
 
-.bg-light {
-  background: url(../img/bg-light.png);
+.section {
+  width: 95%;
+  height: 95%;
 }
 
-.bg-dark {
-  background: url(../img/bg-dark.png);
-}
+/* .content-bottom { */
+/*   position: fixed; */
+/*   right: 0; */
+/*   bottom: -10%; */
+/* } */
