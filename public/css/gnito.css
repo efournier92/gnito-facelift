@@ -57,7 +57,8 @@ h2 {
 
 p {
   font-family: "HNeue-Med", Arial, sans-serif;
-  color: #ffffff;
+  color: #6c6c6c;
+  text-align: center;
 }
 
 #panel-01 {
@@ -70,6 +71,26 @@ p {
   background: url(../img/bg-02.jpg);
   background-position: 65% top;
   background-size: cover;
+}
+
+#panel-03 {
+  background: url(../img/bg-03.png);
+  background-position: 65% top;
+  background-size: cover;
+}
+
+#panel-04 {
+  background: url(../img/bg-04.jpg);
+  background-position: 65% top;
+  background-size: cover;
+}
+
+.separator {
+  display: block;
+  width: 42px;
+  height: 6px;
+  box-shadow: inset 0 4px 0 0 #cacaca;
+  margin: 114px auto 24px;
 }
 
 .flex-container {
@@ -90,9 +111,11 @@ p {
   padding: 15px;
 }
 
-.top-panel {
-  height: 30%;
+.flex-right {
   width: 100%;
+  flex-direction: column;
+  align-content: flex-end;
+  justify-content: space-between;
 }
 
 .form-inline {
@@ -100,11 +123,16 @@ p {
   margin: 0 15px;
 }
 
+.iphone-right {
+  flex: 0;
+  height: 20%;
+  text-direction: right;
+}
+
 .iphone-image {
   flex: 0;
   height: 80%;
   width: auto;
-  height: 70%;
   margin-left: 10px;
 }
 
