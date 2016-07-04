@@ -85,6 +85,12 @@ p {
   background-size: cover;
 }
 
+#panel-05 {
+  background: url(../img/bg-05.jpg);
+  background-position: 65% top;
+  background-size: cover;
+}
+
 .separator {
   display: block;
   width: 42px;
