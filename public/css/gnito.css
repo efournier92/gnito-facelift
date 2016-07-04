@@ -27,7 +27,8 @@
 }
 
 .section {
-  /* padding: 15px 2% 0 2%; */
+  background-position: 65% top;
+  background-size: cover;
 }
 
 body {
@@ -59,16 +60,25 @@ p {
   color: #ffffff;
 }
 
-.graybox {
-  width: 90%;
-  background: #ffffff;
-  /* background: rgba(069, 068, 068, 0.9); */
+#panel-01 {
+  background: url(../img/bg-01.jpg);
+  background-position: 65% top;
+  background-size: cover;
 }
 
-.img-centered {
-  flex: 0;
-  text-align: center;
-  margin: auto;
+#panel-02 {
+  background: url(../img/bg-02.jpg);
+  background-position: 65% top;
+  background-size: cover;
+}
+
+.flex-container {
+  display: flex;
+  align-contents: space-between;
+  background: rgba(069, 068, 068, 0.5);
+  border-radius: 25px;
+  margin: 0 auto;
+  width: 70%;
 }
 
 .flexbox {
@@ -80,14 +90,14 @@ p {
   padding: 15px;
 }
 
-.flex-container {
-  display: flex;
-  align-contents: space-between;
-  background: rgba(069, 068, 068, 0.4);
-  border-radius: 25px;
-  margin: 0 auto;
-  width: 70%;
-  
+.top-panel {
+  height: 30%;
+  width: 100%;
+}
+
+.form-inline {
+  text-align: right;
+  margin: 0 15px;
 }
 
 .iphone-image {
@@ -95,25 +105,8 @@ p {
   height: 80%;
   width: auto;
   height: 70%;
+  margin-left: 10px;
 }
-
-.form-inline {
-  text-align: right;
-  margin: 0 15px;
-}
-/* .form-container { */
-/*   margin: 0 auto; */
-/* } */
-
-/* #email-input { */
-/*   width: 100%; */
-/*   margin: 0 auto; */
-/*   text-align: center; */
-/* } */
-
-/* #email-submit { */
-/*   width: 100%; */
-/* } */
 
 @media screen and (max-width: 425px) {
   .flexbox {
