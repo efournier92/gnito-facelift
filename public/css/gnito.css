@@ -128,7 +128,13 @@ p {
 }
 
 #panel-05 {
-  background: url(../img/bg-05.jpg);
+  background: url(../img/bg-05.png);
+  background-position: 65% top;
+  background-size: cover;
+}
+
+#panel-06 {
+  background: url(../img/bg-05.png);
   background-position: 65% top;
   background-size: cover;
 }
@@ -188,9 +194,25 @@ p {
   align-items: flex-start;
 }
 
+.form-panel {
+  width: 100%;
+  height: 50%;
+  align-content: center;
+}
+
 .flex-left p {
   text-align: left;
 }
+
+.blog-container {
+  width: 100%;
+  height:  20%;
+}
+
+.blog {
+
+}
+
 .points-list-center {
   flex: 0;
 }
