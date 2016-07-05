@@ -180,12 +180,32 @@ p {
   margin: 5% 0;
 }
 
-.points-list {
+.flex-left {
+  height: 80%;
+  width: 50%;
+  margin: 5% 0;
+  align-content: flex-start;
+  align-items: flex-start;
+}
+
+.flex-left p {
+  text-align: left;
+}
+.points-list-center {
   flex: 0;
 }
 
-.points-list p {
+.points-list-center p {
   font-size: 1em;
+  margin: 3% 10%;
+}
+
+.points-list-left {
+  flex: 0;
+}
+
+.points-list-left p {
+  text-align: left;
   margin: 3% 10%;
 }
 
