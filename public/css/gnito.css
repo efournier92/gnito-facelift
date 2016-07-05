@@ -46,10 +46,9 @@ nav.navbar.navbar-fixed-top {
 
 .navbar a {
   font-family: "HNeue-Thin", Arial, sans-serif;
-  color: #949494;
   font-size: 20px;
   margin-top: 10px;
-  margin-right: 30px;
+  margin-right: 5px;
 }
 
 .navbar li {
@@ -61,14 +60,28 @@ nav.navbar.navbar-fixed-top {
   top:0;
 }
 
-#for-business {
-  background-color: #168eea; 
+.nav-button {
+  background-color: rgba(148, 148, 148, 0.5);
+  font-family: "HNeue-Thin", Arial, sans-serif;
   color: #ffffff;
+  width: 120px;
+  height: 35px;
   font-size: 16px;
-  border-radius: 25px;
+  text-align: center;
   height: 36px;
-  margin-top: 8px;
-  padding-bottom: 30px;
+  padding-bottom: 30px !important;
+  border-radius: 25px;
+}
+
+.container {
+  width: 100%;
+  margin: 0 !important;
+}
+
+#for-business {
+  background-color: rgba(255, 255, 255, 0.8);
+  width: 200px;
+  color: #168eea;
 }
 
 .btn-business a {
