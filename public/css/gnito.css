@@ -13,17 +13,58 @@
   src: url('../fonts/HelveticaNeueLTCom-Md.ttf');
 }
 
+input.form-control {
+  margin-right: -4px; 
+  border-radius: 0px;
+}
+
+.btn-default {
+  background-color: #f36e21;
+  color: #ffffff;
+  height: 35px;
+  border: none;
+  border-radius: 0px;
+  font-family: "HNeue-Med", Arial, sans-serif;
+  font-size: 18px;
+  padding-top: 8px;
+}
+
+.btn-default a {
+  padding-top: 50px;
+}
+.btn-default:hover {
+  background-color: #106aaf;
+}
+
 .navbar {
   margin-top: -10px;
 }
 
-.navbar-brand {
-  height: 5px;
+.navbar a {
+  font-family: "HNeue-Thin", Arial, sans-serif;
+  font-size: 24px;
+  color: #f36e21;
+  margin-top: 10px;
 }
 
-.navbar-toggle {
-  margin-top: 10px;
-  font-size: 20px;
+.navbar li {
+  margin-top: 20px;
+}
+
+.navbar img {
+  position: fixed;
+  top:0;
+}
+
+.btn-business {
+  background-color: #168eea; 
+  color: #ffffff;
+  font-size: 16px;
+  border-radius: 25px;
+}
+
+.btn-business a {
+  color: #ffffff;
 }
 
 .section {
