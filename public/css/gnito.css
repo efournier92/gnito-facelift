@@ -100,6 +100,7 @@ p {
   font-family: "HNeue-Med", Arial, sans-serif;
   color: #6c6c6c;
   text-align: center;
+  flex: 0;
 }
 
 #panel-01 {
@@ -132,12 +133,17 @@ p {
   background-size: cover;
 }
 
+.separator-container {
+  width: 100%;
+  margin: 3%;
+  flex: 0;
+}
+
 .separator {
-  display: block;
-  width: 42px;
+  width: 100px;
   height: 6px;
   box-shadow: inset 0 4px 0 0 #cacaca;
-  margin: 114px auto 24px;
+  margin: 0 auto;
 }
 
 .flex-container {
@@ -154,17 +160,33 @@ p {
   flex-direction: column;
   align-content: center;
   justify-content: space-between;
-  min-height: 100%;
   padding: 15px;
 }
 
 .flex-right {
-  width: 100%;
-  margin-top: 10%;
+  width: 101%;
+  height: 100%;
+  margin: 5% 0;
+  padding-left: 30%;
   flex-direction: column;
   align-content: flex-end;
   align-items: flex-end;
-  justify-content: space-between;
+  justify-content: space-around;
+}
+
+.flex-center {
+  height: 80%;
+  justify-content: space-around;
+  margin: 5% 0;
+}
+
+.points-list {
+  flex: 0;
+}
+
+.points-list p {
+  font-size: 1em;
+  margin: 3% 10%;
 }
 
 .form-inline {
@@ -173,7 +195,7 @@ p {
 }
 
 .iphone-right {
-  flex: 1;
+  flex: 0;
   height: 20%;
   text-align: right;
 }
