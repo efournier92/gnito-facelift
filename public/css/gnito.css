@@ -160,8 +160,10 @@ p {
 
 .flex-right {
   width: 100%;
+  margin-top: 10%;
   flex-direction: column;
   align-content: flex-end;
+  align-items: flex-end;
   justify-content: space-between;
 }
 
@@ -171,14 +173,13 @@ p {
 }
 
 .iphone-right {
-  flex: 0;
+  flex: 1;
   height: 20%;
-  text-direction: right;
+  text-align: right;
 }
 
 .iphone-image {
   flex: 0;
-  height: 80%;
   width: auto;
   margin-left: 10px;
 }
