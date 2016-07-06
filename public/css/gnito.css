@@ -13,21 +13,48 @@
   src: url('../fonts/HelveticaNeueLTCom-Md.ttf');
 }
 
-input.form-control {
-  margin-right: -4px; 
-  border-radius: 0px;
-}
 
 .btn-default {
-  background-color: #f36e21;
+  flex: 0;
+  background-color: rgba(243, 110, 033, 0.8);
   color: #ffffff;
-  height: 35px;
-  border: none;
-  border-radius: 0px;
-  font-family: "HNeue-Med", Arial, sans-serif;
+  height: 30px;
+  width: 300px;
+  font-family: "HNeue-Light", Arial, sans-serif;
   font-size: 18px;
-  padding-top: 8px;
+  margin-top: -22px;
+  padding-bottom: 20px;
+  border: none;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
 }
+
+.form-horizontal {
+  text-align: right;
+}
+
+button.btn-default:hover {
+  background-color: rgba(255, 255, 255, 0.9);
+  color: #168eea;
+}
+
+.from-right {
+
+}
+
+.email-form.form-control {
+  flex: 0;
+  background-color: rgba(255, 255, 255, 0.9);
+  font-family: "HNeue-Light", Arial, sans-serif;
+  width: 300px;
+  height: 40px;
+  font-size: 20px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  padding-top: 12px;
+  text-align: center;
+}
+
 
 .btn-default a {
   padding-top: 50px;
@@ -41,14 +68,11 @@ input.form-control {
   margin-top: -26px;
 }
 
-nav.navbar.navbar-fixed-top {
-}
-
 .navbar a {
   font-family: "HNeue-Thin", Arial, sans-serif;
   font-size: 20px;
   margin-top: 10px;
-  margin-right: 5px;
+  margin-right: 8px;
 }
 
 .navbar li {
@@ -61,10 +85,10 @@ nav.navbar.navbar-fixed-top {
 }
 
 .nav-button {
-  background-color: rgba(148, 148, 148, 0.5);
+  background-color: rgba(243, 110, 033, 0.7);
   font-family: "HNeue-Thin", Arial, sans-serif;
   color: #ffffff;
-  width: 120px;
+  width: 190px;
   height: 35px;
   font-size: 16px;
   text-align: center;
@@ -80,7 +104,6 @@ nav.navbar.navbar-fixed-top {
 
 #for-business {
   background-color: rgba(255, 255, 255, 0.8);
-  width: 200px;
   color: #168eea;
 }
 
@@ -97,8 +120,7 @@ body {
   width: 100%;
   height: 100%;
   font-family: "HNeue-Med", Arial, sans-serif;
-  color: green;
-  background-color: black;
+  color: #ffffff;
 }
 
 h1 {
@@ -118,10 +140,10 @@ h2 {
 }
 
 p {
+  flex: 0;
   font-family: "HNeue-Med", Arial, sans-serif;
   color: #6c6c6c;
   text-align: center;
-  flex: 0;
 }
 
 #panel-01 {
@@ -146,6 +168,16 @@ p {
   background: url(../img/bg-04.jpg);
   background-position: 65% top;
   background-size: cover;
+}
+
+#panel-04 h1 {
+  margin: 0;
+  text-align: left;
+}
+
+#panel-04 p {
+  color: #ffffff;
+  font-size: 18px;
 }
 
 #panel-05 {
@@ -184,16 +216,17 @@ p {
 
 .flexbox {
   display: flex;
+  height: 100%;
   flex-direction: column;
   align-content: center;
+  align-items: flex-end;
   justify-content: space-between;
   padding: 15px;
 }
 
 .flex-right {
-  width: 101%;
-  height: 100%;
-  margin: 5% 0;
+  width: 100%;
+  padding-top: 35px;
   padding-left: 30%;
   flex-direction: column;
   align-content: flex-end;
@@ -201,16 +234,26 @@ p {
   justify-content: space-around;
 }
 
+#form-with-iphone {
+  padding-left: 0;  
+  flex-direction: row;
+  align-items: center;
+  align-content: flex-end;
+  justify-content: flex-end;
+}
+
 .flex-center {
   height: 80%;
+  align-content: center;
+  align-items: center;
   justify-content: space-around;
   margin: 5% 0;
 }
 
 .flex-left {
-  height: 80%;
-  width: 50%;
-  margin: 5% 0;
+  height: 90%;
+  width: 45%;
+  margin-top: 65px;
   align-content: flex-start;
   align-items: flex-start;
 }
@@ -218,7 +261,6 @@ p {
 .form-panel {
   width: 100%;
   height: 50%;
-  align-content: center;
 }
 
 .flex-left p {
@@ -228,10 +270,6 @@ p {
 .blog-container {
   width: 100%;
   height:  20%;
-}
-
-.blog {
-
 }
 
 .points-list-center {
@@ -269,11 +307,40 @@ p {
   margin-left: 10px;
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 700px) {
   .flexbox {
-    height: 85vh;
-    position: fixed;
-    bottom: 0;
+    display: flex;
+    height: 80vh;
+    width: 100%;
+    flex-direction: column;
+    align-content: flex-begin;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .flex-container {
+    width: 100%;
+  }
+
+  .email-form {
+    width: 100%; 
+  }
+
+  .flexbox-right {
+    padding: 0px;
+  }
+
+.flex-right {
+  width: 100%;
+  padding: 0px;
+  flex-direction: column;
+  align-content: flex-end;
+  align-items: flex-end;
+  justify-content: space-around;
+}
+
+  form {
+    width: 100%;
   }
 
   h1 {
@@ -281,12 +348,14 @@ p {
     font-size: 2.5em; 
     text-align: center;
     margin: 10px 0;
+    padding: 0 16px; 
   }
 
   h2 {
     flex: 0;
     font-size: 1.5em; 
     text-align: center;
-    margin: 0;
+    margin: 10px 0;
+    padding: 0 16px; 
   }
 }
