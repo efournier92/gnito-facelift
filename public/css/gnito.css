@@ -313,7 +313,7 @@ p {
     height: 80vh;
     width: 100%;
     flex-direction: column;
-    align-content: flex-begin;
+    align-content: center;
     align-items: center;
     justify-content: center;
   }
@@ -326,17 +326,47 @@ p {
     width: 100%; 
   }
 
-  .flexbox-right {
-    padding: 0px;
-  }
-
 .flex-right {
   width: 100%;
-  padding: 0px;
+  padding: 20px 0 0 0;
   flex-direction: column;
-  align-content: flex-end;
-  align-items: flex-end;
-  justify-content: space-around;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-left {
+  height: 80vh;
+  width: 100%;
+  padding: 0;
+  align-content: flex-start;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+#panel-04 p {
+ font-size: 1em; 
+}
+
+#actionEmail.form-control.email-form {
+  width: 100%;
+}
+
+#form-with-iphone {
+  padding: 0;
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+
+#form-with-iphone.flexbox.flex-right {
+  height: 200px;
+}
+
+.flex-center.flexbox {
+  padding: 0;
+  margin-top: 50px;
 }
 
   form {
@@ -347,8 +377,6 @@ p {
     flex: 0;
     font-size: 2.5em; 
     text-align: center;
-    margin: 10px 0;
-    padding: 0 16px; 
   }
 
   h2 {
@@ -357,5 +385,8 @@ p {
     text-align: center;
     margin: 10px 0;
     padding: 0 16px; 
+  }
+  p {
+    font-size: 1em;
   }
 }
