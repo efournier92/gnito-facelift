@@ -13,55 +13,37 @@
   src: url('../fonts/HelveticaNeueLTCom-Md.ttf');
 }
 
-
-.btn-default {
-  flex: 0;
-  background-color: rgba(243, 110, 033, 0.8);
+body {
+  width: 100%;
+  height: 100%;
+  background-color: #e5e5e5;
+  font-family: "HNeue-Med", Arial, sans-serif;
   color: #ffffff;
-  height: 30px;
-  width: 300px;
-  font-family: "HNeue-Light", Arial, sans-serif;
-  font-size: 18px;
-  margin-top: -22px;
-  padding-bottom: 20px;
-  border: none;
-  border-bottom-left-radius: 15px;
-  border-bottom-right-radius: 15px;
 }
 
-.form-horizontal {
+h1 {
+  font-family: "HNeue-Thin", Arial, sans-serif;
+  font-size: 4em;
   text-align: right;
+  color: #f36e21;
+  margin: 0 15px;
 }
 
-button.btn-default:hover {
-  background-color: rgba(255, 255, 255, 0.9);
-  color: #168eea;
-}
-
-.from-right {
-
-}
-
-.email-form.form-control {
-  flex: 0;
-  background-color: rgba(255, 255, 255, 0.9);
+h2 {
   font-family: "HNeue-Light", Arial, sans-serif;
-  width: 300px;
-  height: 40px;
-  font-size: 20px;
-  border-top-left-radius: 15px;
-  border-top-right-radius: 15px;
-  padding-top: 12px;
+  font-size: 2em;
   text-align: center;
+  color: #ffffff;
+  margin: 0 15px;
 }
 
-.btn-default a {
-  padding-top: 50px;
+p {
+  flex: 0;
+  font-family: "HNeue-Light", Arial, sans-serif;
+  text-align: center;
+  color: #6c6c6c;
 }
 
-.btn-default:hover {
-  background-color: #106aaf;
-}
 
 .navbar {
   margin-top: -26px;
@@ -69,8 +51,9 @@ button.btn-default:hover {
   width: 100%;
 }
 
-.navbar-brand {
-  width: 166px
+.navbar-brand img {
+  margin-top: 5px;
+  width: 166px;
 }
 
 .navbar-right {
@@ -116,60 +99,6 @@ a.nav-button {
   border-radius: 25px;
 }
 
-.container {
-  width: 100%;
-  margin: 0 !important;
-}
-
-#for-business {
-  background-color: rgba(255, 255, 255, 0.8);
-  color: #168eea;
-}
-
-.btn-business a {
-  color: #ffffff;
-}
-
-.section {
-  background-position: 65% top;
-  background-size: cover;
-}
-
-body {
-  width: 100%;
-  height: 100%;
-  font-family: "HNeue-Med", Arial, sans-serif;
-  background-color: #e5e5e5;
-  color: #ffffff;
-}
-
-#fullpage {
-  background-color: #e5e5e5;
-}
-
-h1 {
-  font-family: "HNeue-Thin", Arial, sans-serif;
-  color: #f36e21;
-  text-align: right;
-  font-size: 4em;
-  margin: 0 15px;
-}
-
-h2 {
-  font-family: "HNeue-Light", Arial, sans-serif;
-  color: #ffffff;
-  font-size: 2em;
-  text-align: center;
-  margin: 0 15px;
-}
-
-p {
-  flex: 0;
-  font-family: "HNeue-Light", Arial, sans-serif;
-  color: #6c6c6c;
-  text-align: center;
-}
-
 #panel-01 {
   background: url(../img/bg-01.jpg);
   background-position: 65% top;
@@ -183,6 +112,7 @@ p {
 #panel-01 form {
   margin-right: 10px;
 }
+
 #panel-02 {
   background: url(../img/bg-02.jpg);
   background-position: 65% top;
@@ -223,6 +153,70 @@ p {
   background-size: cover;
 }
 
+.section {
+  background-position: 65% top;
+  background-size: cover;
+}
+
+.btn-default {
+  flex: 0;
+  background-color: rgba(243, 110, 033, 0.8);
+  font-family: "HNeue-Light", Arial, sans-serif;
+  font-size: 18px;
+  color: #ffffff;
+  height: 30px;
+  width: 300px;
+  margin-top: -22px;
+  padding-bottom: 20px;
+  border: none;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+button.btn-default:hover {
+  color: #168eea;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.btn-default a {
+  padding-top: 50px;
+}
+
+.btn-default:hover {
+  background-color: #106aaf;
+}
+
+.email-form.form-control {
+  flex: 0;
+  background-color: rgba(255, 255, 255, 0.9);
+  font-family: "HNeue-Light", Arial, sans-serif;
+  width: 300px;
+  height: 40px;
+  font-size: 20px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  padding-top: 12px;
+  text-align: center;
+}
+
+#for-business {
+  background-color: rgba(255, 255, 255, 0.8);
+  color: #168eea;
+}
+
+.btn-business a {
+  color: #ffffff;
+}
+
+.container {
+  width: 100%;
+  margin: 0 !important;
+}
+
+.form-horizontal {
+  text-align: right;
+}
+
 .separator-container {
   width: 100%;
   margin: 3%;
@@ -255,6 +249,22 @@ p {
   padding: 15px;
 }
 
+.flex-left {
+  height: 90%;
+  width: 45%;
+  margin-top: 65px;
+  align-content: flex-start;
+  align-items: flex-start;
+}
+
+.flex-center {
+  height: 80%;
+  align-content: center;
+  align-items: center;
+  justify-content: space-around;
+  margin: 5% 0;
+}
+
 .flex-right {
   width: 100%;
   padding-top: 35px;
@@ -271,22 +281,6 @@ p {
   align-items: center;
   align-content: flex-end;
   justify-content: flex-end;
-}
-
-.flex-center {
-  height: 80%;
-  align-content: center;
-  align-items: center;
-  justify-content: space-around;
-  margin: 5% 0;
-}
-
-.flex-left {
-  height: 90%;
-  width: 45%;
-  margin-top: 65px;
-  align-content: flex-start;
-  align-items: flex-start;
 }
 
 .form-panel {
@@ -326,21 +320,53 @@ p {
   margin: 0 15px;
 }
 
+.iphone-image {
+  flex: 0;
+  margin-left: 10px;
+}
+
 .iphone-right {
   flex: 0;
   height: 20%;
   text-align: right;
 }
 
-.iphone-image {
-  flex: 0;
-  margin-left: 10px;
-}
-
 @media screen and (max-width: 768px) {
-.navbar-brand img {
-  width: 115px
-}
+  h1 {
+    flex: 0;
+    font-size: 2.5em; 
+    text-align: center;
+  }
+
+  h2 {
+    flex: 0;
+    font-size: 1.5em; 
+    text-align: center;
+    margin: 10px 0;
+    padding: 0 16px; 
+  }
+
+  p {
+    font-size: 1em;
+  }
+
+  form {
+    width: 100%;
+  }
+
+  .navbar-brand img {
+    width: 115px;
+    margin-top: 5px;
+  }
+
+  #panel-04 p {
+    font-size: 1em; 
+  }
+
+  .email-form {
+    width: 100%; 
+  }
+
   .flexbox {
     display: flex;
     height: 80vh;
@@ -355,71 +381,42 @@ p {
     width: 100%;
   }
 
-  .email-form {
-    width: 100%; 
+  .flex-left {
+    height: 80vh;
+    width: 100%;
+    padding: 0;
+    align-content: flex-start;
+    justify-content: space-between;
+    align-items: flex-start;
   }
 
-.flex-right {
-  width: 100%;
-  padding: 20px 0 0 0;
-  flex-direction: column;
-  align-content: center;
-  align-items: center;
-  justify-content: center;
-}
+  .flex-center.flexbox {
+    padding: 0;
+    margin-top: 50px;
+  }
 
-.flex-left {
-  height: 80vh;
-  width: 100%;
-  padding: 0;
-  align-content: flex-start;
-  justify-content: space-between;
-  align-items: flex-start;
-}
+  .flex-right {
+    width: 100%;
+    padding: 20px 0 0 0;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+  }
 
-#panel-04 p {
- font-size: 1em; 
-}
-
-#actionEmail.form-control.email-form {
-  width: 100%;
-}
-
-#form-with-iphone {
-  padding: 0;
-  flex-direction: row;
-  align-items: center;
-  align-content: center;
-  justify-content: center;
-}
-
-#form-with-iphone.flexbox.flex-right {
-  height: 200px;
-}
-
-.flex-center.flexbox {
-  padding: 0;
-  margin-top: 50px;
-}
-
-  form {
+  #actionEmail.form-control.email-form {
     width: 100%;
   }
 
-  h1 {
-    flex: 0;
-    font-size: 2.5em; 
-    text-align: center;
+  #form-with-iphone {
+    padding: 0;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
   }
 
-  h2 {
-    flex: 0;
-    font-size: 1.5em; 
-    text-align: center;
-    margin: 10px 0;
-    padding: 0 16px; 
-  }
-  p {
-    font-size: 1em;
+  #form-with-iphone.flexbox.flex-right {
+    height: 200px;
   }
 }
