@@ -79,9 +79,18 @@ button.btn-default:hover {
   margin-top: 20px;
 }
 
+a.nav-button {
+  position: fixed;
+  right: 0;
+}
+
 .navbar img {
   position: fixed;
   top:0;
+}
+
+.nav>li>a {
+  display: inline-block;
 }
 
 .nav-button {
@@ -120,7 +129,12 @@ body {
   width: 100%;
   height: 100%;
   font-family: "HNeue-Med", Arial, sans-serif;
+  background-color: #e5e5e5;
   color: #ffffff;
+}
+
+#fullpage {
+  background-color: #e5e5e5;
 }
 
 h1 {
@@ -135,13 +149,13 @@ h2 {
   font-family: "HNeue-Light", Arial, sans-serif;
   color: #ffffff;
   font-size: 2em;
-  text-align: right;
+  text-align: center;
   margin: 0 15px;
 }
 
 p {
   flex: 0;
-  font-family: "HNeue-Med", Arial, sans-serif;
+  font-family: "HNeue-Light", Arial, sans-serif;
   color: #6c6c6c;
   text-align: center;
 }
@@ -152,6 +166,13 @@ p {
   background-size: cover;
 }
 
+#panel-01 h2 {
+  text-align: right;
+} 
+
+#panel-01 form {
+  margin-right: 10px;
+}
 #panel-02 {
   background: url(../img/bg-02.jpg);
   background-position: 65% top;
@@ -181,7 +202,7 @@ p {
 }
 
 #panel-05 {
-  background: url(../img/bg-05.png);
+  background-color: #e5e5e5;
   background-position: 65% top;
   background-size: cover;
 }
@@ -211,7 +232,7 @@ p {
   background: rgba(069, 068, 068, 0.5);
   border-radius: 25px;
   margin: 0 auto;
-  width: 70%;
+  width: 60%;
 }
 
 .flexbox {
