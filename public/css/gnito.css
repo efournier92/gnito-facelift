@@ -55,7 +55,6 @@ button.btn-default:hover {
   text-align: center;
 }
 
-
 .btn-default a {
   padding-top: 50px;
 }
@@ -66,6 +65,17 @@ button.btn-default:hover {
 
 .navbar {
   margin-top: -26px;
+  white-space: nowrap;
+  width: 100%;
+}
+
+.navbar-brand {
+  width: 166px
+}
+
+.navbar-right {
+  position: fixed;
+  right: 10px;
 }
 
 .navbar a {
@@ -324,11 +334,13 @@ p {
 
 .iphone-image {
   flex: 0;
-  width: auto;
   margin-left: 10px;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 768px) {
+.navbar-brand img {
+  width: 115px
+}
   .flexbox {
     display: flex;
     height: 80vh;
