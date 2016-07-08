@@ -241,6 +241,7 @@ button.btn-default:hover {
 .flexbox {
   display: flex;
   height: 100%;
+  width: 501px;
   flex-direction: column;
   align-content: center;
   align-items: flex-end;
