@@ -108,6 +108,10 @@ a.nav-button {
   text-align: right;
 } 
 
+#panel-01.flex-container.row.flexbox {
+  height: 530px;
+}
+
 #panel-01 form {
   margin-right: 10px;
 }
@@ -126,7 +130,7 @@ a.nav-button {
 #panel-02 h2 {
   font-family: "HNeue-Light", Arial, sans-serif;
   font-size: 1.5em;
-  text-align: right !important;
+  text-align: right;
   color: #ffffff;
   margin-top: 15px !important;
 }
@@ -135,6 +139,10 @@ a.nav-button {
   background: url(../img/bg-03.png);
   background-position: 65% top;
   background-size: cover;
+}
+
+#panel-03.flexbox {
+  height: none;
 }
 
 #panel-04 {
@@ -244,41 +252,51 @@ button.btn-default:hover {
 
 .flex-container {
   display: flex;
-  align-contents: space-between;
+  width: 750px;
   background: rgba(069, 068, 068, 0.5);
   border-radius: 25px;
   margin: 0 auto;
-  width: 750px;
+  align-content: space-between;
 }
 
 .flexbox {
   display: flex;
-  height: 100%;
-  width: 501px;
+  height: 90%;
+  width: 500px;
   flex-direction: column;
-  align-content: center;
+  align-content: space-between;
   align-items: flex-end;
-  justify-content: space-between;
+  justify-content: space-around;
   padding: 15px;
 }
 
 .flex-left {
-  height: 90%;
+  display: flex;
+  flex-direction: column;
   width: 45%;
   margin-top: 65px;
-  align-content: flex-start;
   align-items: flex-start;
+  align-content: flex-start;
+  justify-content: space-around;
+}
+
+.flex-left p {
+  font-size: 2em;
+  text-align: left;
 }
 
 .flex-center {
-  height: 80%;
-  align-content: center;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
   align-items: center;
+  align-content: center;
   justify-content: space-around;
-  margin: 5% 0;
 }
 
 .flex-right {
+  display: flex;
+  flex-direction: column;
   width: 100%;
   padding-top: 35px;
   padding-left: 30%;
@@ -302,12 +320,7 @@ button.btn-default:hover {
 }
 
 .form-panel {
-  width: 100%;
   height: 50%;
-}
-
-.flex-left p {
-  text-align: left;
 }
 
 .blog-container {
@@ -354,14 +367,17 @@ button.btn-default:hover {
     flex: 0;
     font-size: 2.5em; 
     text-align: center;
+    width: 80%;
+    margin: 0 auto;
   }
 
   h2 {
     flex: 0;
     font-size: 1.5em; 
-    text-align: center;
-    margin: 10px 0;
+    text-align: center !important;
     padding: 0 16px; 
+    width: 80%;
+    margin: 0 auto;
   }
 
   p {
@@ -381,14 +397,11 @@ button.btn-default:hover {
     font-size: 1em; 
   }
 
-  .email-form {
-    width: 100%; 
-  }
-
   .flexbox {
     display: flex;
     height: 80vh;
     width: 100%;
+    padding: 0px;
     flex-direction: column;
     align-content: center;
     align-items: center;
@@ -398,14 +411,23 @@ button.btn-default:hover {
   .flex-container {
     width: 100%;
   }
+  
+  #panel-02 h2 {
+    font-family: "HNeue-Light", Arial, sans-serif;
+    font-size: 1.5em;
+    text-align: center;
+    color: #ffffff;
+    margin-top: 15px !important;
+  }
 
   .flex-left {
-    height: 80vh;
-    width: 100%;
-    padding: 0;
-    align-content: flex-start;
-    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+    margin-top: 65px;
     align-items: flex-start;
+    align-content: flex-start;
+    justify-content: space-around;
   }
 
   .flex-center.flexbox {
@@ -423,7 +445,7 @@ button.btn-default:hover {
   }
 
   #actionEmail.form-control.email-form {
-    width: 100%;
+    width: 300px;
   }
 
   #form-with-iphone {
