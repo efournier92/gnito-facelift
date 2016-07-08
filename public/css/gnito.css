@@ -26,7 +26,7 @@ h1 {
   font-size: 4em;
   text-align: right;
   color: #f36e21;
-  margin: 0 15px 15px 0;
+  margin: 0 15px;
 }
 
 h2 {
@@ -116,6 +116,19 @@ a.nav-button {
   background: url(../img/bg-02.jpg);
   background-position: 65% top;
   background-size: cover;
+}
+
+#panel-02 h2 {
+  text-align: right;
+  margin-top: 15px !important;
+}
+
+#panel-02 h2 {
+  font-family: "HNeue-Light", Arial, sans-serif;
+  font-size: 1.5em;
+  text-align: right !important;
+  color: #ffffff;
+  margin-top: 15px !important;
 }
 
 #panel-03 {
@@ -270,9 +283,14 @@ button.btn-default:hover {
   padding-top: 35px;
   padding-left: 30%;
   flex-direction: column;
+  justify-content: space-between;
   align-content: flex-end;
   align-items: flex-end;
-  justify-content: space-around;
+}
+
+.flex-right h2 {
+  margin-top: 5px;
+  text-align: right;
 }
 
 #form-with-iphone {
