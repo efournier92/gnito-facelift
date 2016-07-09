@@ -124,7 +124,6 @@ a.nav-button {
 
 #panel-02 h2 {
   text-align: right;
-  margin-top: 15px !important;
 }
 
 #panel-02 h2 {
@@ -132,7 +131,6 @@ a.nav-button {
   font-size: 1.5em;
   text-align: right;
   color: #ffffff;
-  margin-top: 15px !important;
 }
 
 #panel-03 {
@@ -193,9 +191,17 @@ a.nav-button {
   border-bottom-right-radius: 15px;
 }
 
+.btn-add-influencer {
+  background-color: rgba(243, 110, 033, 0.8);
+}
+
+.btn-remove-influencer {
+  background-color: rgba(243, 110, 033, 0.8);
+}
+
 button.btn-default:hover {
-  color: #168eea;
-  background-color: rgba(255, 255, 255, 0.9);
+  color: #2a6496;
+  background-color: rgba(238, 238, 238, 0.9);
 }
 
 .btn-default a {
@@ -203,7 +209,8 @@ button.btn-default:hover {
 }
 
 .btn-default:hover {
-  background-color: #106aaf;
+  color: #2a6496;
+  background-color: rgba(238, 238, 238, 0.9);
 }
 
 .email-form.form-control {
@@ -222,6 +229,11 @@ button.btn-default:hover {
 #for-business {
   background-color: rgba(255, 255, 255, 0.8);
   color: #168eea;
+}
+
+#for-business:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+  color: #f36e21;
 }
 
 .btn-business a {
@@ -320,7 +332,13 @@ button.btn-default:hover {
 }
 
 .form-panel {
-  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  align-self: center;
+  margin-top: 10%;
 }
 
 .blog-container {
@@ -358,7 +376,7 @@ button.btn-default:hover {
 
 .iphone-right {
   flex: 0;
-  height: 20%;
+  height: 10%;
   text-align: right;
 }
 
@@ -376,7 +394,7 @@ button.btn-default:hover {
     font-size: 1.5em; 
     text-align: center !important;
     padding: 0 16px; 
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
   }
 
@@ -393,6 +411,10 @@ button.btn-default:hover {
     margin-top: 5px;
   }
 
+  a.nav-button {
+    margin-top: 5px; 
+  }
+    
   #panel-04 p {
     font-size: 1em; 
   }
@@ -430,11 +452,6 @@ button.btn-default:hover {
     justify-content: space-around;
   }
 
-  .flex-center.flexbox {
-    padding: 0;
-    margin-top: 50px;
-  }
-
   .flex-right {
     width: 100%;
     padding: 20px 0 0 0;
@@ -458,5 +475,9 @@ button.btn-default:hover {
 
   #form-with-iphone.flexbox.flex-right {
     height: 200px;
+  }
+
+  .form-panel {
+    margin-top: 25%;
   }
 }
